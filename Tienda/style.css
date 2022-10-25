@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #FFFCF5;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #FFFCF5;
+}
+header > nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}
+header > nav > ul > li {
+  margin-top: 1rem;
+}
+header > nav > ul > li:nth-child(1) {
+  margin-left: 1rem;
+}
+header > nav {
+  top: 0px;
+  background-color: #926014;
+  font-size: 1.75rem;
+  height: 5rem;
+}
+.banner {
+  background-image: url(images/fondojpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 20rem;
+  padding: 5rem;
+  text-align: center;
+  color: #FFFCF5;
+  font-size: 5em;
+}
+
+main {
+  margin-top: 3rem;
+}
+main > h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.stock {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 1rem;
+  text-align: center;
+}
+.stock > div {
+  border: 1px solid #FFFCF5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.stock > div > img {
+  width: 50%;
+}
+
+
+#best-img {
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+}
+#best-img > div > img {
+  width: 15%;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  background-color: #926014;
+  bottom: 0px;
+  display: flex;
+  justify-content: right;
+}
+
+footer > nav > ul > li {
+  list-style: none;
+  margin: 2px 25rem 10px 2px;
+}
+
+@media screen and (max-width: 850px) {
+  .banner {
+    height: 20rem;
+    padding: 5rem;
+    font-size: 3.5em;
+  }
+  .stock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #best-img > div > img {
+    width: 20%;
+  }
+  footer > nav > ul > li {
+    margin: 12px 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stock {
+    grid-template-columns: 1fr;
+  }
+  .delivery-details {
+    grid-template-columns: repeat(2, minmax(1rem, 8.5rem));
+  }
+  #best-img > div > img {
+    width: 25%;
+  }
+}
+
