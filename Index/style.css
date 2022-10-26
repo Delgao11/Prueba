@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body,
 html {
@@ -7,9 +12,33 @@ html {
     margin: 0;
 }
 
-header {
-    text-align: center center;
-}
+a {
+    text-decoration: none;
+    color: #FFFCF5;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #FFFCF5;
+  }
+  header > nav > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+  }
+  header > nav > ul > li {
+    margin-top: 1rem;
+  }
+  header > nav > ul > li:nth-child(1) {
+    margin-left: 1rem;
+  }
+  header > nav {
+    top: 0px;
+    background-color: #926014;
+    font-size: 1.75rem;
+    height: 5rem;
+  }
 
 main {
     margin-top: 2cm;
@@ -49,6 +78,7 @@ h2 {
 h3 {
     font-size: 20px;
     color: black;
+    text-align: center;
 }
 
 h5 {
