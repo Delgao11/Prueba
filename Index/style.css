@@ -12,6 +12,40 @@ html {
     margin: 0;
 }
 
+.flex-container{
+  display: flex;
+  justify-content: center;
+  background-color: #926014;
+  border: 2px;
+  padding: 100px;
+  border: #926014;
+}
+
+.flex-container2{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 2px;
+  padding: 100px;
+  border: white;
+}
+
+.col1{
+  margin-right: 2rem;
+}
+
+.col3{
+  margin-right: 2rem;
+}
+
+.col5{
+  margin-right: 2rem;
+}
+
+.valda1{
+  margin-right: 100px;
+}
+
 a {
     text-decoration: none;
     color: #FFFCF5;
