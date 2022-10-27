@@ -1,0 +1,58 @@
+a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-align: center;
+  }
+  a:visited {
+    color: white;
+    text-align: center;
+  }
+  header > nav {
+    top: 0px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.75rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  h1{
+    text-align: center;
+    color: #926014;
+  }
+  .body{
+    background-color: antiquewhite;
+  }
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    background-color: #926014;
+    border: 2px;
+    padding: 100px;
+    border: #926014;
+  }
+  .Login_P{
+    margin-left: 18rem;
+    margin-top: 150px;
+    color: white;
+  }
+  img{
+    width: 500px;
+    height: 500px;
+  }
+  footer {
+    background-color: rgb(196, 194, 194);
+    padding-top: center;
+    text-align: center;
+}
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: aquamarine;
+  padding-top: 20px;
+}

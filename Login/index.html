@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+                <h1 class="banner">DesNudeProject</h1>
+        </nav>
+    </header>
+
+    <div class="flex-container">
+        <div class="Imagen">
+            <a>
+                <img src="img/Foto.jpg" class="rounded float " alt="Foto Login" id="valda1">
+            </a>
+        </div>
+        <div class="Login_P">
+            <h2>Login</h2>
+        <form action="" method="post" id="form">
+            <a>
+                Nombre de Usuario: <input id="Name" type="text" name="Nombre" minlength="6" required><br>
+                <br>Contraseña: <input id="Contraseña" type="password" name="Contraseña" minlength="5" required><br>
+                <br><input type="button" value="Enviar" onclick="validar();"></input>
+                <p class="warnings" id="warnings"></p>
+            </a>
+        </form>
+        </div>
+    </div>
+        <footer>
+            <nav>
+                <a target="_blank " href="../AboutUs/index.html">AbuotUs</a>
+                <a target="_blank " href="../formulario/index.html">Contactos</a>
+            </nav>
+    
+            <br>
+    
+            <p>Todos los Derechos Reservados DESNUDEPROYECT 2021 &copy; </p>
+    
+        </footer>
+        <script src="validacion.js"></script>
+</body>
+</html>
