@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+    height: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  background-color: #926014;
+  border: 2px;
+  padding: 100px;
+  border: #926014;
+}
+
+.flex-container2{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 2px;
+  padding: 100px;
+  border: white;
+}
+
+.col1{
+  margin-right: 2rem;
+}
+
+.col3{
+  margin-right: 2rem;
+}
+
+.col5{
+  margin-right: 2rem;
+}
+
+.valda1{
+  margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFCF5;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #FFFCF5;
+  }
+  header > nav > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+  }
+  header > nav > ul > li {
+    margin-top: 1rem;
+  }
+  header > nav > ul > li:nth-child(1) {
+    margin-left: 1rem;
+  }
+  header > nav {
+    top: 0px;
+    background-color: #926014;
+    font-size: 1.75rem;
+    height: 5rem;
+  }
+
+main {
+    margin-top: 2cm;
+    background: url("img/Banner2.jpg");
+    background-size: 100%;
+    background-position: center center 10px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100%;
+    color: #926014;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center center;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: auto;
+    margin-top: auto;
+    margin-left: auto;
+    color: #926014;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+.address {
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.seccion1 {
+    background-color: #926014;
+    background-size: 50%
+}
+
+.seccion3 {
+    background-color: #926014;
+}
+
+footer {
+    background-color: rgb(196, 194, 194);
+    padding-top: center;
+    text-align: center;
+}
