@@ -1,0 +1,22 @@
+table{
+
+    background-color: rgb(214, 205, 205);
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 15%;
+
+}
+html{
+    background-image: radial-gradient(circle, #926014, #926010, #92600c, #6d450a, #5e380e);
+}
+input:hover{
+    background-color: #856d4a;
+    color: white;
+}
+th{
+    background-color: #856d4a;
+    color: white;
+}
+tr:hover{
+    background-color: #856d4a;
+}

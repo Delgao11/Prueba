@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla Profe</title>
+
+  <link rel="stylesheet" href="Style/style.css">
+
+
+</head>
+
+<body>
+
+  <html>
+
+  <body>
+    <div id="wrapper">
+      <table align='center' cellpadding=6 id="data_table" border=0>
+        <tr>
+          <th>NOMBRE</th>
+          <th>PRECIO</th>
+          <th>CANTIDAD</th>
+          <th>FECHA</th>
+          <th>Acciones</th>
+        </tr>
+
+        <tr id="row1">
+          <td id="name_row1">Sudadera Azul</td>
+          <td id="country_row1">50</td>
+          <td id="age_row1">26</td>
+          <td id="bla_row1">26/11/23</td>
+          <td>
+            <input type="button" id="edit_button1" value="edit" class="edit" onclick="edit_row('1')">
+            <input type="button" id="save_button1" value="save" class="save" onclick="save_row('1')">
+            <input type="button" value="delete" class="delete" onclick="delete_row('1')">
+          </td>
+        </tr>
+
+        <tr id="row2">
+          <td id="name_row2">Sudadera Negra</td>
+          <td id="country_row2">50</td>
+          <td id="age_row2">26</td>
+          <td id="bla_row2">26/11/23</td>
+          <td>
+            <input type="button" id="edit_button2" value="edit" class="edit" onclick="edit_row('2')">
+            <input type="button" id="save_button2" value="save" class="save" onclick="save_row('2')">
+            <input type="button" value="delete" class="delete" onclick="delete_row('2')">
+          </td>
+        </tr>
+
+        <tr id="row3">
+          <td id="name_row3">Sudadera Morada</td>
+          <td id="country_row3">50</td>
+          <td id="age_row3">19</td>
+          <td id="bla_row3">26/11/23</td>
+          <td>
+            <input type="button" id="edit_button3" value="edit" class="edit" onclick="edit_row('3')">
+            <input type="button" id="save_button3" value="save" class="save" onclick="save_row('3')">
+            <input type="button" value="delete" class="delete" onclick="delete_row('3')">
+          </td>
+        </tr>
+        <tr id="nuevos_campos">
+          <td><input type="text" id="new_name"></td>
+          <td><input type="text" id="new_country"></td>
+          <td><input type="text" id="new_age"></td>
+          <td><input type="text" id="new_bla"></td>
+          <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+       </tr>
+
+      </table>
+    </div>
+  </body>
+  </html>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
