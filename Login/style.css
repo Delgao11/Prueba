@@ -31,9 +31,9 @@ a {
     display: flex;
     justify-content: center;
     background-color: #926014;
-    border: 2px;
+    border: 2rem;
     padding: 100px;
-    border: #926014;
+    border: white;
   }
   .Login_P{
     margin-left: 18rem;

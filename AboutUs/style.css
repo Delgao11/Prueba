@@ -10,6 +10,7 @@ body {
   
   html {
     box-sizing: border-box;
+    background-color: antiquewhite;
   }
   
   *, *:before, *:after {
@@ -35,38 +36,53 @@ body {
     color: white;
   }
   
-  .container {
-    padding: 0 16px;
+
+  #Juanlu{
+    position: absolute;
+    top: 40%;
+    left: 25%;
   }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
+
+  #Juanlu > img{
+    width: 300px;
+    height: 400px;
   }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+
+  #Juanlu > h1{
     text-align: center;
-    cursor: pointer;
-    width: 100%;
+  }
+
+  #Juanlu > p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 100px;
+  }
+
+  #Alvaro{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+  }
+
+  #Alvaro > img{
+    width: 330px;
+    height: 400px;
+  }
+
+  #Alvaro > h1{
+    text-align: center;
+  }
+
+  #Alvaro > p{
+    text-align: center;
+    font-size: 15px;
+        margin-bottom: 100px;
   }
   
-  .button:hover {
-    background-color: #555;
-  }
+  
   
   @media screen and (max-width: 650px) {
-    .column {
+    #contenido {
       width: 100%;
       display: block;
     }
