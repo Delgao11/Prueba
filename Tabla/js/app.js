@@ -1,29 +1,29 @@
 function edit_row(no) {
     document.getElementById("edit_button" + no).style.display = "none";
     document.getElementById("save_button" + no).style.display = "block";
-    var name = document.getElementById("name_row" + no);
-    var country = document.getElementById("country_row" + no);
-    var age = document.getElementById("age_row" + no);
-    var bla = document.getElementById("bla_row" + no)
-    var name_data = name.innerHTML;
-    var country_data = country.innerHTML;
-    var age_data = age.innerHTML;
-    var bla_data = age.innerHTML;
-    name.innerHTML = "<input type='text' id='name_text" + no + "' value='" + name_data + "'>";
-    country.innerHTML = "<input type='text' id='country_text" + no + "' value='" + country_data + "'>";
-    age.innerHTML = "<input type='text' id='age_text" + no + "' value='" + age_data + "'>";
-    bla.innerHTML = "<input type='text' id='bla_text" + no + "' value='" + bla_data + "'>";
+    var nombre = document.getElementById("nombre_row" + no);
+    var precio = document.getElementById("precio_row" + no);
+    var cantidad = document.getElementById("cantidad_row" + no);
+    var fecha = document.getElementById("fecha_row" + no)
+    var nombre_data = nombre.innerHTML;
+    var precio_data = precio.innerHTML;
+    var cantidad_data = cantidad.innerHTML;
+    var fecha_data = fecha.innerHTML;
+    nombre.innerHTML = "<input type='text' id='nombre_text" + no + "' value='" + nombre_data + "'>";
+    precio.innerHTML = "<input type='text' id='precio_text" + no + "' value='" + precio_data + "'>";
+    cantidad.innerHTML = "<input type='text' id='cantidad_text" + no + "' value='" + cantidad_data + "'>";
+    fecha.innerHTML = "<input type='text' id='fecha_text" + no + "' value='" + fecha_data + "'>";
 }
 
 function save_row(no) {
-    var name_val = document.getElementById("name_text" + no).value;
-    var country_val = document.getElementById("country_text" + no).value;
-    var age_val = document.getElementById("age_text" + no).value;
-    var bla_val = document.getElementById("bla_text" + no).value;
-    document.getElementById("name_row" + no).innerHTML = name_val;
-    document.getElementById("country_row" + no).innerHTML = country_val;
-    document.getElementById("age_row" + no).innerHTML = age_val;
-    document.getElementById("bla_row" + no).innerHTML = bla_val;
+    var nombre_val = document.getElementById("nombre_text" + no).value;
+    var precio_val = document.getElementById("precio_text" + no).value;
+    var cantidad_val = document.getElementById("cantidad_text" + no).value;
+    var fecha_val = document.getElementById("fecha_text" + no).value;
+    document.getElementById("nombre_row" + no).innerHTML = nombre_val;
+    document.getElementById("precio_row" + no).innerHTML = precio_val;
+    document.getElementById("cantidad_row" + no).innerHTML = cantidad_val;
+    document.getElementById("fecha_row" + no).innerHTML = fecha_val;
     document.getElementById("edit_button" + no).style.display = "block";
     document.getElementById("save_button" + no).style.display = "none";
 }
@@ -33,15 +33,15 @@ function delete_row(no) {
 }
 
 function add_row() {
-    var new_name = document.getElementById("new_name").value;
-    var new_country = document.getElementById("new_country").value;
-    var new_age = document.getElementById("new_age").value;
-    var new_bla = document.getElementById("new_bla").value;
+    var new_nombre = document.getElementById("new_nombre").value;
+    var new_precio = document.getElementById("new_precio").value;
+    var new_cantidad = document.getElementById("new_cantidad").value;
+    var new_fecha = document.getElementById("new_fecha").value;
     var table = document.getElementById("data_table");
     var table_len = (table.rows.length) - 1;
-    var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='name_row" + table_len + "'>" + new_name + "</td><td id='country_row" + table_len + "'>" + new_country + "</td><td id='age_row" + table_len + "'>" + new_age + "</td><td id='bla_row" + table_len + "'>" + new_bla + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
-    document.getElementById("new_name").value = "";
-    document.getElementById("new_country").value = "";
-    document.getElementById("new_age").value = "";
-    document.getElementById("new_bla").value = "";
+    var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='nombre_row" + table_len + "'>" + new_nombre + "</td><td id='precio_row" + table_len + "'>" + new_precio + "</td><td id='cantidad_row" + table_len + "'>" + new_cantidad + "</td><td id='fecha_row" + table_len + "'>" + new_fecha + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
+    document.getElementById("new_nombre").value = "";
+    document.getElementById("new_precio").value = "";
+    document.getElementById("new_cantidad").value = "";
+    document.getElementById("new_fecha").value = "";
 }
